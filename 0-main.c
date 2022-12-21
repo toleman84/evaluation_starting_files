@@ -33,7 +33,14 @@ extern char **environ;
 int main(void)
 {
 	/* your code goes here */
+	pid_t pid;
+	char *pathname;
+	
+	pid = fork();
+	
+	execve(argv[0], argv, environ);
 
-
+	wait(status);
+	
 	return (0);
 }
