@@ -76,13 +76,29 @@ int main(void)
 int min(int *array, int size)
 {
 	/* your code goes here */
+	int min = array[0];
+	for (; i < size; i++)
+	{
+		if (array[i] < min)
+		{
+			min = array[i];
+		}
+	}
 
-	return 0;
+	return min;
 }
 
 int max(int *array, int size)
 {
 	/* your code goes here */
+	int max = array[0];
+	for (; i < size; i++)
+	{
+		if (array[i] > max)
+		{
+			max = array[i];
+		}
+	}
 
-	return 0;
+	return max;
 }
